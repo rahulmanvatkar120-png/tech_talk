@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Talk | Premium 3D Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="bee-sound"></audio>
+    <header class="header">
+        <a href="#" class="logo">
+            <span class="logo-icon">
+                <i class="fa-solid fa-comments"></i>
+            </span>
+            <span class="logo-text">Tech Talk</span>
+        </a>
+        <nav class="nav">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <button class="cta-button">
+            <span>Get Started</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="sound-toggle" id="sound-toggle" aria-label="Toggle Sound">
+            <i class="fa-solid fa-volume-xmark"></i>
+        </button>
+    </header>
+
+    <model-viewer src="bee_flying.glb" id="bee-model" camera-orbit="90deg 90deg" auto-rotate-delay="0"
+        interaction-prompt="none" touch-action="none" autoplay></model-viewer>
+
+    <section class="home" id="home">
+        <div class="hero-content">
+            <span class="hero-label reveal">Full-Stack Innovation</span>
+            <h1 class="hero-title reveal animation-delay-100">
+                <span class="title-line">Building the</span>
+                <span class="title-line gold-text">Future of Tech</span>
+                <span class="title-line">Conversations</span>
+            </h1>
+            <p class="hero-description reveal animation-delay-200">
+                Expert development using Unity (C#), Flutter (Dart), and React Native (JavaScript/TypeScript) 
+                to create stunning 3D experiences, cross-platform mobile apps, and web applications. 
+                We specialize in WebGL, Three.js, Firebase, Python backend, and cloud-native solutions.
+            </p>
+            <div class="hero-buttons reveal animation-delay-300">
+                <button class="btn-primary">
+                    <span>Explore Now</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <button class="btn-secondary">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-header">
+                <span class="section-label">Our Expertise</span>
+                <h2 class="section-title reveal animation-delay-100">
+                    Full-Stack <span class="gold-text">Development</span>
+                </h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal animation-delay-200">
+                    <p class="lead-text">
+                        We build stunning digital experiences across all platforms using Unity (C#), Flutter (Dart), 
+                        and React Native (JavaScript/TypeScript) to deliver native-quality performance everywhere.
+                    </p>
+                    <p class="body-text">
+                        Our team specializes in creating immersive 3D experiences with Three.js & WebGL, 
+                        reactive mobile applications with state management (Provider, Riverpod, Redux), 
+                        and cross-platform solutions using REST APIs, Firebase, and cloud services.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fa-brands fa-unity"></i>
+                            <span>Unity</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-mobile"></i>
+                            <span>Flutter</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-react"></i>
+                            <span>React Native</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-cloud"></i>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-cube"></i>
+                            <span>Three.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-database"></i>
+                            <span>SQL/NoSQL</span>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Delivered</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                    <a href="#" class="link-button">
+                        <span>Discover More</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="gallery-header">
+            <span class="section-label reveal">Our Work</span>
+            <h2 class="section-title reveal animation-delay-100">
+                Project <span class="gold-text">Gallery</span>
+            </h2>
+            <p class="section-description reveal animation-delay-200">
+                Explore our portfolio across different platforms
+            </p>
+        </div>
+        <div class="gallery-tabs">
+            <button class="tab-btn active" data-tab="unity">Unity</button>
+            <button class="tab-btn" data-tab="flutter">Flutter</button>
+            <button class="tab-btn" data-tab="react">React Native</button>
+        </div>
+        <div class="gallery-content">
+            <div class="tab-content active" id="unity">
+                <div class="gallery-card reveal animation-delay-200">
+                    <div class="card-inner">
+                        <div class="card-image">
+                            <img src="bee1.png" alt="Unity 3D Game">
+                        </div>
+                        <div class="card-overlay">
+                            <span class="card-title">3D Game Engine</span>
+                            <span class="card-subtitle">Unity Development</span>
+                        </div>
+                    </div>
+                    <div class="card-accent"></div>
+                </div>
+                <div class="gallery-card reveal animation-delay-300">
+                    <div class="card-inner">
+                        <div class="card-image">
+                            <img src="bee3.png" alt="Unity VR Experience">
+                        </div>
+                        <div class="card-overlay">
+                            <span class="card-title">VR Experience</span>
+                            <span class="card-subtitle">Virtual Reality</span>
+                        </div>
+                    </div>
+                    <div class="card-accent"></div>
+                </div>
+            </div>
+            <div class="tab-content" id="flutter">
+                <div class="gallery-card reveal animation-delay-200">
+                    <div class="card-inner">
+                        <div class="card-image">
+                            <img src="bee1.png" alt="Flutter App">
+                        </div>
+                        <div class="card-overlay">
+                            <span class="card-title">Mobile App</span>
+                            <span class="card-subtitle">Flutter iOS & Android</span>
+                        </div>
+                    </div>
+                    <div class="card-accent"></div>
+                </div>
+                <div class="gallery-card reveal animation-delay-300">
+                    <div class="card-inner">
+                        <div class="card-image">
+                            <img src="bee3.png" alt="Flutter UI">
+                        </div>
+                        <div class="card-overlay">
+                            <span class="card-title">Cross-Platform UI</span>
+                            <span class="card-subtitle">Reactive Interface</span>
+                        </div>
+                    </div>
+                    <div class="card-accent"></div>
+                </div>
+            </div>
+            <div class="tab-content" id="react">
+                <div class="gallery-card reveal animation-delay-200">
+                    <div class="card-inner">
+                        <div class="card-image">
+                            <img src="bee1.png" alt="React Native App">
+                        </div>
+                        <div class="card-overlay">
+                            <span class="card-title">Native Mobile</span>
+                            <span class="card-subtitle">React Native</span>
+                        </div>
+                    </div>
+                    <div class="card-accent"></div>
+                </div>
+                <div class="gallery-card reveal animation-delay-300">
+                    <div class="card-inner">
+                        <div class="card-image">
+                            <img src="bee3.png" alt="React Web">
+                        </div>
+                        <div class="card-overlay">
+                            <span class="card-title">Web Application</span>
+                            <span class="card-subtitle">React Development</span>
+                        </div>
+                    </div>
+                    <div class="card-accent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <span class="section-label reveal">Get In Touch</span>
+                <h2 class="section-title reveal animation-delay-100">
+                    Let's <span class="gold-text">Discuss</span>
+                </h2>
+                <p class="section-description reveal animation-delay-200">
+                    Ready to bring your project to life? Let's talk about your tech requirements.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 91685 91909</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>hello@techtalk.com</span>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form reveal animation-delay-200">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" placeholder="+91 98765 43210">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="tech">Technology Interested In</label>
+                    <select id="tech">
+                        <option value="">Select a technology</option>
+                        <option value="unity">Unity (3D/Game Development)</option>
+                        <option value="flutter">Flutter (Cross-Platform Mobile)</option>
+                        <option value="react">React Native (Mobile Apps)</option>
+                        <option value="web">Web Development (React/Three.js)</option>
+                        <option value="backend">Backend (Python/Node.js)</option>
+                        <option value="fullstack">Full-Stack Solution</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Project Details</label>
+                    <textarea id="message" placeholder="Tell us about your project requirements, timeline, and budget..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">
+                    <span>Send Inquiry</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </span>
+                    <span class="logo-text">Tech Talk</span>
+                </a>
+                <p class="footer-tagline">Your gateway to tech conversations</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+                <a href="admin.html" target="_blank">Admin Panel</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/tech_talk1730" class="social-link" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tech Talk. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</body>
+
+</html>
